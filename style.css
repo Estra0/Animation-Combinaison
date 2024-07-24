@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Fond noir pour bien voir le texte */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#instructions {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    animation: rainbowText 5s linear infinite;
+}
+
+.playstation-icon {
+    font-size: 48px;
+    margin: 0 5px;
+}
+
+@keyframes rainbowText {
+    0%, 100% { color: red; }
+    25% { color: yellow; }
+    50% { color: green; }
+    75% { color: blue; }
+}
+
+#image-container {
+    position: fixed;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s ease-out;
+}
+
+#image-container.show {
+    bottom: 100%;
+}
+
+#secret-image {
+    width: 100px; /* Ajustez la taille selon vos besoins */
+    border: 2px solid white; /* Ajoute une bordure blanche autour de l'image */
+    box-shadow: 0 0 10px white; /* Ajoute une ombre portée blanche */
+}
+
