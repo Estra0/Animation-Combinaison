@@ -5,6 +5,3 @@ Page HTML,CSS et JavaScript permettant l'activation d'une animation après une c
 
 Grâce au JavaScript, si l'utilisateur appuie sur ⬆️⬇️⬇️⬅️. Une animation se joue et le texte indiquant la combinaison disparait puis réapparait.
 
-# Démo 
-
-https://foura25.github.io/Animation-Combinaison/surprise.html
